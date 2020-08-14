@@ -10,32 +10,32 @@
       </div>
 
       <div id="info-box" class="box" v-show="isActive">
-        <article class="media">
-          <div class="media-left">
+        <div class="columns is-centered is-vcentered">
+          <div class="column">
             <figure class="image is-64x64">
               <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
             </figure>
           </div>
-          <div class="media-content">
-            <div class="content">
-              <p>
+          <div class="column">
+            <div>
               {{ item.make }} | {{ item.model }}
-                <br>
+              <br>
+              <p class="has-text-left">
                 Description of the piece of equipment goes here. Lorem ipsum dolor. Nullam condimentum luctus turpis.
               </p>
             </div>
-            <nav class="level is-mobile">
-              <div class="level-right">
+            <nav class="level">
+              <div class="level-left">
                 <a class="level-item" aria-label="reply" href="tel: 303-990-1115">
                   Interested in this item? Call us!
-            <span class="icon is-small phone-icon" >
-               <i class="fas fa-phone" ></i>
-            </span>
+                  <span class="icon is-small phone-icon" >
+                   <i class="fas fa-phone" ></i>
+                </span>
                 </a>
               </div>
             </nav>
           </div>
-        </article>
+        </div>
       </div>
     </article>
 </template>
