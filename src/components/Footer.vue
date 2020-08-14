@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>footer</h1>
+  <div id="footer">
+    <p><i class="fas fa-copyright"></i> Complete Forklifts 2020-2021</p>
   </div>
 </template>
 
@@ -11,5 +11,9 @@ export default {
 </script>
 
 <style scoped>
+#footer {
+  padding: 5%;
+  margin: 5%;
+}
 
 </style>
