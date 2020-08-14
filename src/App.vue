@@ -1,28 +1,19 @@
 <template>
   <div id="app" class="container is-fluid">
     <img alt="Vue logo" src="./assets/logo.png">
-    <Welcome msg="Welcome to COMPLETE FORKLIFT"/>
-    <About />
-    <Inventory />
-    <Contact />
+    <Welcome />
     <Footer />
   </div>
 </template>
 
 <script>
-import Welcome from './components/Welcome.vue'
-import About from '@/components/About'
-import Inventory from '@/components/Inventory'
-import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import Welcome from '@/components/Welcome'
 
 export default {
   name: 'App',
   components: {
     Welcome,
-    About,
-    Contact,
-    Inventory,
     Footer
   }
 }

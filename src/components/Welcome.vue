@@ -1,13 +1,25 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div>
+    <h1>Welcome to COMPLETE FORKLIFT</h1>
+    <About />
+    <Inventory />
+    <Contact />
 
   </div>
 </template>
 
 <script>
+import About from '@/components/About'
+import Inventory from '@/components/Inventory'
+import Contact from '@/components/Contact'
+
 export default {
   name: 'Welcome',
+  components: {
+    About,
+    Inventory,
+    Contact
+  },
   props: {
     msg: String
   }

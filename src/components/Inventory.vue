@@ -1,30 +1,26 @@
 <template>
   <div>
     <h1 class="title">Our Inventory</h1>
-    <article v-for="(item, index) in items" :key="index">
-      <div class="message-header">
-        <h1>{{ item.name }}</h1>
-        <span class="tag is-medium is-pulled-right">
-              <!--          <router-link-->
-          <!--            v-bind:to="{name: 'view-item', params: {item_id: item.item_id}}"-->
-          <!--          >-->
-            <span id="icon" class="icon has-text-primary"><i class="fas fa-eye"></i></span>
-          <!--          </router-link>-->
-          </span>
-      </div>
-      <p class="message-body">
-        Item Make/Model: {{ item.make }} | {{ item.model }}</p>
-    </article>
+    <ViewItem />
   </div>
 </template>
 
 <script>
 import db from './firebaseInit'
+import ViewItem from '@/components/ViewItem'
 export default {
   name: 'inventory',
+  components: { ViewItem },
   data () {
     return {
-      items: []
+      items: [],
+      isActive: false
+    }
+  },
+  methods: {
+    isActiveToggle () {
+      this.isActive = !this.isActive
+      return this.isActive
     }
   },
   created () {
