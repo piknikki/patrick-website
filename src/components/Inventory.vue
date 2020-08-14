@@ -1,13 +1,16 @@
 <template>
   <div>
     <h1 class="title">Our Inventory</h1>
-    <ViewItem />
+    <article v-for="item in items" :key="item.item_id" >
+      <ViewItem :item="item"></ViewItem>
+    </article>
   </div>
 </template>
 
 <script>
 import db from './firebaseInit'
 import ViewItem from '@/components/ViewItem'
+
 export default {
   name: 'inventory',
   components: { ViewItem },
@@ -15,12 +18,6 @@ export default {
     return {
       items: [],
       isActive: false
-    }
-  },
-  methods: {
-    isActiveToggle () {
-      this.isActive = !this.isActive
-      return this.isActive
     }
   },
   created () {
