@@ -1,17 +1,29 @@
 <template>
-  <div id="app">
+  <div id="app" class="container is-fluid">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Welcome msg="Welcome to COMPLETE FORKLIFT"/>
+    <About />
+    <Inventory />
+    <Contact />
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Welcome from './components/Welcome.vue'
+import About from '@/components/About'
+import Inventory from '@/components/Inventory'
+import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Welcome,
+    About,
+    Contact,
+    Inventory,
+    Footer
   }
 }
 </script>
