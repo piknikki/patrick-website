@@ -1,10 +1,12 @@
 <template>
   <div>
-    <h1>Welcome to COMPLETE FORKLIFT</h1>
+    <h1 id="title"><span class="title">COMPLETE FORKLIFT</span></h1>
+    <br>
     <About />
+    <br>
     <Inventory />
+    <br>
     <Contact />
-
   </div>
 </template>
 
@@ -40,5 +42,9 @@ li {
 }
 a {
   color: #42b983;
+}
+
+#title {
+  padding: 3%;
 }
 </style>

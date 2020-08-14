@@ -1,18 +1,20 @@
 <template>
-  <div>
+  <div id="contact">
     <h1>Contact Us</h1>
-    <span class="icon">
-      <i class="fal fa-phone"></i>
-    </span>
-    303-555-1212
+    <a href="tel: 303-990-1115">
+      <span class="icon">
+        <i class="fal fa-phone"></i>
+      </span>
+      303-990-1115
+    </a>
     <br>
     <br>
-    <span class="icon">
-      <a href="mailto: patrick@completeforklifts.com">
-        <i class="fas fa-envelope" ></i>
-          Patrick@completeforklifts.com
-      </a>
-    </span>
+    <a href="mailto: patrick@completeforklifts.com">
+      <span class="icon">
+          <i class="fas fa-envelope" ></i>
+      </span>
+      Patrick@completeforklifts.com
+    </a>
   </div>
 </template>
 
@@ -22,6 +24,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style >
+#contact {
+  padding: 3%;
+}
 
 </style>

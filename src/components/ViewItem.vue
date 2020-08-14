@@ -6,11 +6,37 @@
           <button @click="isActiveToggle" v-bind:to="{name: 'view-item', params: {item_id: item_id}}">
             <span id="icon" class="icon has-text-primary"><i class="fas fa-eye"></i></span>
           </button>
-          <!--          </router-link>-->
           </span>
       </div>
-      <p class="message-body" v-show="isActive">
-        Item Make/Model: {{ make }} | {{ model }}</p>
+
+      <div id="info-box" class="box" v-show="isActive">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+              {{ item.make }} | {{ item.model }}
+                <br>
+                Description of the piece of equipment goes here. Lorem ipsum dolor. Nullam condimentum luctus turpis.
+              </p>
+            </div>
+            <nav class="level is-mobile">
+              <div class="level-right">
+                <a class="level-item" aria-label="reply" href="tel: 303-990-1115">
+                  Interested in this item? Call us!
+            <span class="icon is-small phone-icon" >
+               <i class="fas fa-phone" ></i>
+            </span>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </article>
+      </div>
     </article>
 </template>
 
@@ -71,6 +97,14 @@ tag {
 .message-header {
   margin: 10px;
   border-radius: 4px;
+}
+
+#info-box {
+  margin: 20px;
+}
+
+.phone-icon {
+  padding: 0 20px ;
 }
 
 </style>

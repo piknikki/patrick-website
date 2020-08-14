@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="inventory">
     <h1 class="title">Our Inventory</h1>
     <article v-for="item in items" :key="item.item_id" >
       <ViewItem :item="item"></ViewItem>
@@ -40,6 +40,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style >
+#inventory {
+  padding: 3%;
+}
 
 </style>
