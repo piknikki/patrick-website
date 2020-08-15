@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container is-fluid">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img id="logo" alt="Complete Forklift logo" src="./assets/logo.png">
     <Welcome />
     <Footer />
   </div>
@@ -20,8 +20,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -35,5 +33,9 @@ export default {
 
 html {
   background-color: #edebeb;
+}
+
+#logo {
+  width: 200px;
 }
 </style>
