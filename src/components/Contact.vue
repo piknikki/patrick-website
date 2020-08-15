@@ -13,7 +13,7 @@
       <span class="icon">
           <i class="fas fa-envelope" ></i>
       </span>
-      Patrick@completeforklifts.com
+      Patrick@completeforklift.com
     </a>
   </div>
 </template>

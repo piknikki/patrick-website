@@ -1,6 +1,6 @@
 <template>
   <div id="footer">
-    <p><i class="fas fa-copyright"></i> Complete Forklifts 2020-2021</p>
+    <p><i class="fas fa-copyright"></i> Complete Forklift 2020-2021</p>
   </div>
 </template>
 
