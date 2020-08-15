@@ -30,7 +30,8 @@ export default {
           item_id: doc.data().item_id,
           name: doc.data().name,
           color: doc.data().color,
-          price: doc.data().price
+          price: doc.data().price,
+          hours: doc.data().hours
         }
         console.log(data)
         this.items.push(data)

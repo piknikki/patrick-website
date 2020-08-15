@@ -1,7 +1,8 @@
 <template >
   <div id="about">
-    <h3>We sell forklifts, scissor lifts, and all kinds of other great equipment. We are happy to provide you with free
-    comparative quotes on any of our equipment.</h3>
+    <h3>We sell truck-mounted forklifts, scissor lifts, boomlifts, and all kinds of other forklift equipment. We look forward
+      to providing you with competitive quotes on equipment you need.
+    </h3>
   </div>
 </template>
 

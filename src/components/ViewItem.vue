@@ -20,6 +20,8 @@
             <div>
               {{ item.make }} | {{ item.model }}
               <br>
+              hours: {{ item.hours }}
+              <br>
               <p class="has-text-left">
                 Description of the piece of equipment goes here. Lorem ipsum dolor. Nullam condimentum luctus turpis.
               </p>
@@ -54,7 +56,8 @@ export default {
       item_id: null,
       name: null,
       color: null,
-      price: null
+      price: null,
+      hours: null
     }
   },
   methods: {
@@ -74,6 +77,7 @@ export default {
             vm.model = doc.data().model
             vm.name = doc.data().name
             vm.price = doc.data().price
+            vm.hours = doc.data().hours
           })
         })
       })
